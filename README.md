@@ -68,5 +68,5 @@ pm.test("Check Status Code", function () {
 - ✅ Add it to **Resume & LinkedIn**.
 - ✅ Use this project for **job applications**.
 
-🚀 **Built with ❤️ using Postman & MockAPI**
+🚀 **Built with ❤️ using Postman, MockAPI & with the help of ChatGPT**
 
