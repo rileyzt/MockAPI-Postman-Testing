@@ -1,0 +1,664 @@
+{
+	"id": "3fbac9d4-bfe0-4f24-a7d1-77ffd4d9e26d",
+	"name": "MockAPI Testing",
+	"timestamp": "2025-03-06T06:18:42.172Z",
+	"collection_id": "41489197-bcc343a4-2cc5-4815-bcdc-dd01575c6f45",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 16,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-03-06T06:18:32.927Z",
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "d72f2c37-65f3-4e4c-81a6-116b8f7ed19a",
+			"name": "Users",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users",
+			"time": 1885,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check Status Code": true
+			},
+			"testPassFailCounts": {
+				"Check Status Code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1885
+			],
+			"allTests": [
+				{
+					"Check Status Code": true
+				}
+			]
+		},
+		{
+			"id": "bd37e1d4-3464-4f69-a0d7-3b6cb99f1a03",
+			"name": "Create a User",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users",
+			"time": 278,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Verify User Creation": true
+			},
+			"testPassFailCounts": {
+				"Verify User Creation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				278
+			],
+			"allTests": [
+				{
+					"Verify User Creation": true
+				}
+			]
+		},
+		{
+			"id": "f11704fc-0dc6-452a-9843-0e10c09469eb",
+			"name": "Update a User (Replace All Data)",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users/64",
+			"time": 273,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify User Update": false
+			},
+			"testPassFailCounts": {
+				"Verify User Update": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				273
+			],
+			"allTests": [
+				{
+					"Verify User Update": false
+				}
+			]
+		},
+		{
+			"id": "3169fcdd-489f-4741-9a3a-522f8410e8d0",
+			"name": "Modify Specific User Data (Email)",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users/71",
+			"time": 268,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check Email Update": true
+			},
+			"testPassFailCounts": {
+				"Check Email Update": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				268
+			],
+			"allTests": [
+				{
+					"Check Email Update": true
+				}
+			]
+		},
+		{
+			"id": "c6dd9621-4043-4012-af14-cf56de70be82",
+			"name": "Remove a User",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users/",
+			"time": 237,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Verify User Deletion": false
+			},
+			"testPassFailCounts": {
+				"Verify User Deletion": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				237
+			],
+			"allTests": [
+				{
+					"Verify User Deletion": false
+				}
+			]
+		},
+		{
+			"id": "b6ee2878-7e04-434a-84cc-1fa900e320f4",
+			"name": "Retrieve Headers",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users",
+			"time": 256,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check Headers": true
+			},
+			"testPassFailCounts": {
+				"Check Headers": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				256
+			],
+			"allTests": [
+				{
+					"Check Headers": true
+				}
+			]
+		},
+		{
+			"id": "5e3265be-b35a-4853-ad16-b3bfb16b3ee9",
+			"name": "Check Available Methods",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users",
+			"time": 324,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Check Headers": false
+			},
+			"testPassFailCounts": {
+				"Check Headers": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				324
+			],
+			"allTests": [
+				{
+					"Check Headers": false
+				}
+			]
+		},
+		{
+			"id": "dafb338a-3018-4ddf-b8e4-b7376608e926",
+			"name": "Fetch Single User by ID",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users/64",
+			"time": 272,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"User exists": true
+			},
+			"testPassFailCounts": {
+				"User exists": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				272
+			],
+			"allTests": [
+				{
+					"User exists": true
+				}
+			]
+		},
+		{
+			"id": "9b7a2bda-8c43-49f1-9c2d-27d5d5480239",
+			"name": "Handle request for a non-existent user",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users/9999",
+			"time": 313,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"User not found": true
+			},
+			"testPassFailCounts": {
+				"User not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				313
+			],
+			"allTests": [
+				{
+					"User not found": true
+				}
+			]
+		},
+		{
+			"id": "e2b3dd91-7c71-4cc4-b6e4-aa7a903426b0",
+			"name": "Create User with Missing Fields",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users",
+			"time": 253,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Check for required fields": false
+			},
+			"testPassFailCounts": {
+				"Check for required fields": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				253
+			],
+			"allTests": [
+				{
+					"Check for required fields": false
+				}
+			]
+		},
+		{
+			"id": "d75206bd-7add-457b-ab3e-288425308bc5",
+			"name": "Duplicate User Entry",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users",
+			"time": 254,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Check for duplicate user": true
+			},
+			"testPassFailCounts": {
+				"Check for duplicate user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				254
+			],
+			"allTests": [
+				{
+					"Check for duplicate user": true
+				}
+			]
+		},
+		{
+			"id": "8b8eb4e5-4fed-478b-980e-8c87fe677079",
+			"name": "Update User with Invalid ID",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users/9999",
+			"time": 305,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Update non-existent user": true
+			},
+			"testPassFailCounts": {
+				"Update non-existent user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				305
+			],
+			"allTests": [
+				{
+					"Update non-existent user": true
+				}
+			]
+		},
+		{
+			"id": "654e1007-e3c6-4485-af71-570013c2956b",
+			"name": "Modify User with Invalid Field",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users/64",
+			"time": 241,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Invalid field ignored": true
+			},
+			"testPassFailCounts": {
+				"Invalid field ignored": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				241
+			],
+			"allTests": [
+				{
+					"Invalid field ignored": true
+				}
+			]
+		},
+		{
+			"id": "26467bd3-b959-42e0-92e2-22b6c869504a",
+			"name": "Delete Already Removed User",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users/1",
+			"time": 265,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"User already deleted": true
+			},
+			"testPassFailCounts": {
+				"User already deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				265
+			],
+			"allTests": [
+				{
+					"User already deleted": true
+				}
+			]
+		},
+		{
+			"id": "4ca663bd-dbed-4b90-b16c-9cc3de73e789",
+			"name": "Check API Response Headers",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users",
+			"time": 233,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check headers exist": true
+			},
+			"testPassFailCounts": {
+				"Check headers exist": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				233
+			],
+			"allTests": [
+				{
+					"Check headers exist": true
+				}
+			]
+		},
+		{
+			"id": "0c537d12-1ab3-4fa0-9947-43a9c99d36cd",
+			"name": "Check Supported Methods",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users",
+			"time": 250,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Check allowed methods": true
+			},
+			"testPassFailCounts": {
+				"Check allowed methods": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				250
+			],
+			"allTests": [
+				{
+					"Check allowed methods": true
+				}
+			]
+		},
+		{
+			"id": "feb9de78-c713-4bcb-a9a0-03b9a8f02096",
+			"name": "Test Pagination",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users?page=1&limit=5",
+			"time": 292,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Pagination works correctly": true
+			},
+			"testPassFailCounts": {
+				"Pagination works correctly": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				292
+			],
+			"allTests": [
+				{
+					"Pagination works correctly": true
+				}
+			]
+		},
+		{
+			"id": "3765a4fd-495a-4de5-8e04-1d71b13d38e8",
+			"name": "Fetch Users with Sorting",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users?sortBy=name",
+			"time": 252,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Users are sorted by name": true
+			},
+			"testPassFailCounts": {
+				"Users are sorted by name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				252
+			],
+			"allTests": [
+				{
+					"Users are sorted by name": true
+				}
+			]
+		},
+		{
+			"id": "5f245fb8-fa60-4f97-bd5f-e3ef457ae724",
+			"name": "Creating role admin user",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users",
+			"time": 284,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				284
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "659f9659-4657-4403-a960-6b8f00d4cdff",
+			"name": "Fetch Users with Filtering",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users?role=admin",
+			"time": 267,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Filter users with role 'admin'": true
+			},
+			"testPassFailCounts": {
+				"Filter users with role 'admin'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				267
+			],
+			"allTests": [
+				{
+					"Filter users with role 'admin'": true
+				}
+			]
+		},
+		{
+			"id": "e8f6d47f-fd72-4992-8f7b-082a4261c1ed",
+			"name": "Create User with Long Input Values",
+			"url": "https://67b9508651192bd378dd1ad1.mockapi.io/api/v1/users",
+			"time": 273,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"User with long name is created": true
+			},
+			"testPassFailCounts": {
+				"User with long name is created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				273
+			],
+			"allTests": [
+				{
+					"User with long name is created": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 7275,
+	"collection": {
+		"requests": [
+			{
+				"id": "d72f2c37-65f3-4e4c-81a6-116b8f7ed19a",
+				"method": "GET"
+			},
+			{
+				"id": "bd37e1d4-3464-4f69-a0d7-3b6cb99f1a03",
+				"method": "POST"
+			},
+			{
+				"id": "f11704fc-0dc6-452a-9843-0e10c09469eb",
+				"method": "PUT"
+			},
+			{
+				"id": "3169fcdd-489f-4741-9a3a-522f8410e8d0",
+				"method": "PATCH"
+			},
+			{
+				"id": "c6dd9621-4043-4012-af14-cf56de70be82",
+				"method": "DELETE"
+			},
+			{
+				"id": "b6ee2878-7e04-434a-84cc-1fa900e320f4",
+				"method": "HEAD"
+			},
+			{
+				"id": "5e3265be-b35a-4853-ad16-b3bfb16b3ee9",
+				"method": "OPTIONS"
+			},
+			{
+				"id": "dafb338a-3018-4ddf-b8e4-b7376608e926",
+				"method": "GET"
+			},
+			{
+				"id": "9b7a2bda-8c43-49f1-9c2d-27d5d5480239",
+				"method": "GET"
+			},
+			{
+				"id": "e2b3dd91-7c71-4cc4-b6e4-aa7a903426b0",
+				"method": "POST"
+			},
+			{
+				"id": "d75206bd-7add-457b-ab3e-288425308bc5",
+				"method": "POST"
+			},
+			{
+				"id": "8b8eb4e5-4fed-478b-980e-8c87fe677079",
+				"method": "PUT"
+			},
+			{
+				"id": "654e1007-e3c6-4485-af71-570013c2956b",
+				"method": "PATCH"
+			},
+			{
+				"id": "26467bd3-b959-42e0-92e2-22b6c869504a",
+				"method": "DELETE"
+			},
+			{
+				"id": "4ca663bd-dbed-4b90-b16c-9cc3de73e789",
+				"method": "HEAD"
+			},
+			{
+				"id": "0c537d12-1ab3-4fa0-9947-43a9c99d36cd",
+				"method": "OPTIONS"
+			},
+			{
+				"id": "feb9de78-c713-4bcb-a9a0-03b9a8f02096",
+				"method": "GET"
+			},
+			{
+				"id": "3765a4fd-495a-4de5-8e04-1d71b13d38e8",
+				"method": "GET"
+			},
+			{
+				"id": "5f245fb8-fa60-4f97-bd5f-e3ef457ae724",
+				"method": "POST"
+			},
+			{
+				"id": "659f9659-4657-4403-a960-6b8f00d4cdff",
+				"method": "GET"
+			},
+			{
+				"id": "e8f6d47f-fd72-4992-8f7b-082a4261c1ed",
+				"method": "POST"
+			}
+		]
+	}
+}
